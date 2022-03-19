@@ -16,7 +16,7 @@ def predictandoutput():
     pw = request.form["pwidthin"]
     input = [[sl, sw, pl, pw]]
     # Gọi model lên
-    loaded_model = pickle.load(open('model_knn', 'rb'))
+    loaded_model = pickle.load(open('model_svm', 'rb'))
     # Dự đoán mô hình
     result = loaded_model.predict(input)
     # Lấy tên
@@ -33,5 +33,4 @@ def predictandoutput():
 
 
 if __name__ == '__main__':
-    loaded_model = pickle.load(open('model_svm', 'rb'))
     app.run(debug=True)
