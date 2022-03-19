@@ -4,12 +4,12 @@ import pickle
 app = Flask(__name__)
 
 @app.route('/')
-def hello_world():
+def home():
     return render_template("index.html", Predicted_flower_name="Predicted flower name", url_image='static/setosa.jpg')
 
 
 @app.route('/', methods=['POST'])
-def predictandoutput():
+def output():
     sl = request.form["slengthin"]
     sw = request.form["swidthin"]
     pl = request.form["plengthin"]
