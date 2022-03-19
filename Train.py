@@ -14,7 +14,7 @@ y = dataFrame.variety
 X_train, X_test, y_train, y_test = train_test_split(df, y, test_size=0.3, random_state=100)
 
 # Train
-model = svm.SVC(kernel='rbf')
+model = svm.SVC(kernel='rbf', gamma=0.8)
 model.fit(X_train, y_train)
 
 # Tính độ chính xác
