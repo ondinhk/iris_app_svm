@@ -23,8 +23,8 @@ print("Do chinh xác cua mo hinh voi nghi thuc kiem tra hold-out: %.3f" %
 # Do chinh xác cua mo hinh voi nghi thuc kiem tra hold-out: 0.978
 
 # Lưu model đã train
-# file = open('./model_svm', 'wb')
-# pickle.dump(model, file)
+file = open('./model_svm', 'wb')
+pickle.dump(model, file)
 #
 # Test dự đoán
 # Đầu vào là một mảng các giá trị
