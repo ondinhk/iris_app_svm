@@ -35,4 +35,6 @@ def output():
 if __name__ == '__main__':
     app.run(debug=True)
 
-# 1 1 2 3
+# 1 1 2 3 Virginica
+
+# 2 3 3 3 Versicolor
